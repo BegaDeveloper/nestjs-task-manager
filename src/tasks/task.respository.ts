@@ -9,7 +9,7 @@ import { User } from 'src/auth/user.entity';
 
 @Injectable()
 export class TaskRepository {
-  public repo: Repository<Task>; // Change to public if needed or use public methods
+  public repo: Repository<Task>; 
 
   constructor(@InjectEntityManager() private entityManager: EntityManager) {
     this.repo = entityManager.getRepository(Task);
